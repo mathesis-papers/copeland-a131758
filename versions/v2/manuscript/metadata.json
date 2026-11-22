@@ -1,0 +1,23 @@
+{
+  "id": "copeland-a131758",
+  "revision": 2,
+  "problem_ids": [
+    "copeland-a131758"
+  ],
+  "topic": "Copeland's greatest-common-divisor conjecture for the Laguerre polynomial array in OEIS A131758",
+  "title": "Exact contents in Copeland's polynomial-content conjecture via Carlitz's congruence",
+  "creators": [
+    {
+      "name": "Haobo Ma",
+      "affiliation": "ChronoAI Pte Ltd, Singapore"
+    },
+    {
+      "name": "Wenlin Zhang",
+      "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"
+    }
+  ],
+  "abstract": "For Copeland's polynomial-content conjecture (OEIS A131758, revision 48, COMMENTS block signed September 9, 2008), we determine every row content using Carlitz's polynomial congruence (1953/54, Theorem 3, equation (4.8)). The content is 1 at indices 0, 1 and all even indices, and 2 at every odd index at least 3. This replaces the proposed divisor-count formula; every index 6s+8, s>=0, also excludes its one-place shift. The proof identifies content with a fixed divisor of an integer Laguerre polynomial. Direct proofs of associated transform identities and normalization corrections are included.",
+  "summary": "The complete row content is 1 for n=0, n=1 and even n, and 2 for odd n>=3. Both divisor-count indexings fail at all n=6s+8; exact equality cases and source-linked corollaries are proved.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/742ce086eb9c8e6e36cde0fcdf712f63260c045c/D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.lean"
+}

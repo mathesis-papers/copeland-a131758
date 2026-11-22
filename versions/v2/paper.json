@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 90525,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "c78303ca2452d84e8686b781e6193c27b4381adc386c6ee0c5c3fb11ef8c7dd6",
+      "sha256": "c78303ca2452d84e8686b781e6193c27b4381adc386c6ee0c5c3fb11ef8c7dd6"
+    },
+    "source": {
+      "bytes": 16252,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "aa574b4f901213dc480f7c644d117bc2e1eb7d198258cd7ff3ba9534def351ef",
+      "sha256": "aa574b4f901213dc480f7c644d117bc2e1eb7d198258cd7ff3ba9534def351ef"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "For Copeland's polynomial-content conjecture (OEIS A131758, revision 48, COMMENTS block signed September 9, 2008), we determine every row content using Carlitz's polynomial congruence (1953/54, Theorem 3, equation (4.8)). The content is 1 at indices 0, 1 and all even indices, and 2 at every odd index at least 3. This replaces the proposed divisor-count formula; every index 6s+8, s>=0, also excludes its one-place shift. The proof identifies content with a fixed divisor of an integer Laguerre polynomial. Direct proofs of associated transform identities and normalization corrections are included.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "742ce086eb9c8e6e36cde0fcdf712f63260c045c",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/742ce086eb9c8e6e36cde0fcdf712f63260c045c/D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 90525,
+      "sha256": "c78303ca2452d84e8686b781e6193c27b4381adc386c6ee0c5c3fb11ef8c7dd6",
+      "url": "/api/v1/collected-papers/copeland-a131758/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-22T09:02:19.592630054Z",
+    "record": "copeland-a131758",
+    "repository_name": "copeland-a131758",
+    "source": {
+      "bytes": 16252,
+      "sha256": "aa574b4f901213dc480f7c644d117bc2e1eb7d198258cd7ff3ba9534def351ef",
+      "url": "/api/v1/collected-papers/copeland-a131758/files/source?version=2"
+    },
+    "title": "Exact contents in Copeland's polynomial-content conjecture via Carlitz's congruence",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-22T09:02:19.592630054Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "copeland-a131758"
+  }
+}
