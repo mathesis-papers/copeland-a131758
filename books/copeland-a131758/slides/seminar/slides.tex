@@ -1,0 +1,114 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{Why these polynomial rows share only 1 or 2}
+\subtitle{An exposition of Copeland's A131758 content problem}
+\author{Haobo Ma \and Wenlin Zhang}
+\institute{ChronoAI Pte Ltd, Singapore \\ Wenlin Zhang also: National University of Singapore}
+\date{Based on the version 2 paper}
+\begin{document}
+
+% Manuscript: Abstract and Sections 1--3
+\begin{frame}
+  \titlepage
+  \note{This seminar exposition follows the version 2 paper by Haobo Ma and Wenlin Zhang. Our question is about integer divisibility, not the values of a polynomial at arbitrary real inputs.}
+\end{frame}
+
+% Manuscript: Sections 1--3
+\begin{frame}{Outline}
+  \tableofcontents
+  \note{Start with a counterexample, convert a row into a sample sequence, and then decide which primes could divide every sample. The appendix connects the same rows to neighboring sequences.}
+\end{frame}
+
+\section{The question}
+\subsection{A small row and a failed shortcut}
+% Manuscript: Section 1; Section 2, row 8 following Corollary 3
+\begin{frame}{A common divisor must divide every coefficient}
+  \[
+     P_3(t)=4-14t+10t^2+6t^3,\qquad c_3=2.
+  \]
+  Copeland proposed $c_n=D(n)$ for $n>0$, where $D(n)$ counts positive divisors $d$ with $d^2\le n$.
+  \[
+     D(8)=2,\qquad -6417(6209)-962(-41417)=1.
+  \]
+  The first two entries of row $8$ already force $c_8=1$.
+  \note{Read the gcd of a row ignoring signs. For $8$, the eligible divisors are $1$ and $2$. The two entries come from Greubel's table. A divisor of every entry divides the displayed combination, so we do not need to compute the other seven entries. This only refutes a rule; it does not provide a replacement.}
+\end{frame}
+
+\section{The proof}
+\subsection{Change the object}
+% Manuscript: Section 1, Proposition 1
+\begin{frame}{Trade coefficients for integer samples}
+  \[B_n(x)=\sum_{j=0}^n(-1)^{n+j}\binom{n}{j}\frac{n!}{j!}x^j.\]
+  \begin{bookresult}{row-bridge}
+    $P_n$ is integral of degree $n$, with leading coefficient and $P_n(1)$ both $n!$. Its series and gcd satisfy
+    \[P_n=(1-t)^{n+1}\sum_{r\ge0}B_n(r+1)t^r,
+      \quad c_n=\gcd_{v\ge1}B_n(v).\]
+  \end{bookresult}
+  \note{The leading coefficient of $B_n$ is one. A forward difference drops its degree by one, so the $(n+1)$st difference is zero. In each direction the two coefficient lists are related by integer combinations, using the integral power-series inverse of $(1-t)^{n+1}$. This is why the gcd is unchanged.}
+\end{frame}
+
+\subsection{Find witnesses modulo primes}
+% Manuscript: Section 2, Theorem 2, prime congruence
+\begin{frame}{One nonzero residue rules out a prime}
+  Write $n=qp+r$, $0\le r<p$. Carlitz's congruence gives
+  \[B_n(x)\equiv x^{qp}B_r(x)\pmod p.\]
+  \begin{itemize}
+    \item The factorial quotient removes the terms of degree below $qp$.
+    \item If $r<p-1$, there are more nonzero residues than possible roots.
+    \item If $r=p-1$ for odd $p$, the next coefficient distinguishes $B_r$ from $x^{p-1}-1$.
+  \end{itemize}
+  \note{Use $(1+z)^p\equiv1+z^p$ to identify the remaining binomial coefficients. At the boundary $r=p-1$, two monic polynomials vanishing at all nonzero residues would coincide. The $x^{p-2}$ coefficients are $-1$ and $0$ modulo $p$, respectively. The nonzero residue can be represented by a positive integer.}
+\end{frame}
+
+% Manuscript: Section 2, Theorem 2, parity and the witness modulo four
+\begin{frame}{Odd rows keep a single factor of two}
+  \begin{bookresult}{exact-content}
+    $c_n=1$ for $n=0,1$ or even $n$, and $c_n=2$ for odd $n\ge3$.
+  \end{bookresult}
+  \begin{itemize}
+    \item For even $n\ge2$, $B_n(1)$ is odd.
+    \item For odd $n\ge3$, $x^{n-1}(x+1)$ vanishes at both residues modulo $2$.
+    \item For those odd $n$, $B_n(3)\equiv2\pmod4$.
+  \end{itemize}
+  \note{Modulo four only the top four terms can survive. Evaluated at $3$, the third and fourth terms sum to zero: their coefficients are either both zero or both two modulo four, and their powers are $3$ and $1$. The first two terms contribute $3-1=2$. Handle $P_0=1$ and $P_1=t$ separately.}
+\end{frame}
+
+\section{Consequences}
+\subsection{Agreement and parity}
+% Manuscript: Section 2, Corollaries 3 and 4
+\begin{frame}{What the gcd does and does not tell us}
+  Divisor pairing gives $D(u)=\lceil\tau(u)/2\rceil$. For positive $n$ the proposed count is right only at $1,2$ and odd $p^2,p^3,pq$ (distinct primes in $pq$).
+  \begin{bookresult}{row-parity}
+    Modulo $2$, even rows $n\ge2$ are $(1+t)^{n-1}$; odd rows $n\ge3$ are zero.
+  \end{bookresult}
+  \note{The shifted comparison $D(n+1)$ was not posed by Copeland. Both comparisons fail on $n=6s+8$ because $n$ and $n+1$ are composite and $n$ is even. The whole-row parity theorem is stronger than parity of the constant term, but cannot by itself exclude a factor of four.}
+\end{frame}
+
+\subsection{Evidence and sources}
+% Manuscript: Section 4 and bibliography
+\begin{frame}{Two different conclusions}
+  \begin{description}
+    \item[Counterexample] The frozen Lean proof uses row $8$ to refute the joint assertion of integral rows and the proposed divisor count.
+    \item[Replacement] The manuscript proves the exact content of every row. The counterexample alone does not prove this classification.
+  \end{description}
+  \small
+  \href{https://doi.org/10.5281/zenodo.24445683}{Ma and Zhang, version 2};
+  \href{https://oeis.org/A131758}{Copeland, OEIS A131758};
+  \href{https://doi.org/10.1007/BF01180274}{Carlitz, Theorem 3, Eq.~(4.8)};
+  \href{https://math.colgate.edu/~integers/q57/q57.pdf}{Krylov and Li, Corollary 2}.
+  \note{Distinguish the original conjecture, Carlitz's congruence, and the authors' deductions. The counterexample assumes an integer row is supplied by the conjunction; it does not certify global row integrality. The paper does not settle other Bessel, zeta, or interpolation claims.}
+\end{frame}
+
+\appendix
+% Manuscript: Section 3, Corollaries 5--7
+\begin{frame}{Three companion identities}
+  \begin{itemize}
+    \item Pack the rows into $G(x,t)=\sum_{n\ge0}P_n(t)x^n/n!$: it gives a recurrence and inverse Eulerian transforms.
+    \item The A131202 series is $(1-x(t-1))G(x,t)$; its inverse uses multipliers $k!(t-1)^k$.
+    \item With $F_n$ ordered Bell, the signed sequence satisfies $(-1)^nF_n=-\tfrac12\operatorname{Li}_{-n}(2)$.
+  \end{itemize}
+  \note{The companion chapter derives all three statements. At $n=0$, the signed ordered Bell number equals one, while $-\operatorname{Li}_0(2)=2$. Here the polylogarithm at $2$ means rational continuation, not its defining series evaluated outside convergence.}
+\end{frame}
+% Manuscript: Proposition 1, Theorem 2 and Corollary 4 (generated evidence ledger)
+\FormalVerification
+\end{document}

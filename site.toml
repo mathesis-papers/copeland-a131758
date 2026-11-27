@@ -1,0 +1,14 @@
+[site]
+repo = "mathesis-papers/copeland-a131758"
+base_url = "https://papers.trureturing.org/copeland-a131758/"
+post_build = ["python3", "-c", "from pathlib import Path\nimport runpy\nscript = Path(\"docs/layer-mathesis/scripts/site.py\")\nif script.is_file():\n    runpy.run_path(str(script), run_name=\"__main__\")\nelse:\n    print(\"Mathesis post-build skipped: layer script is absent from repository being built\")\n"]
+languages = ["zh", "en"]
+[site.title]
+zh = "Exact contents in Copeland's polynomial-content conjecture via Carlitz's congruence"
+en = "Exact contents in Copeland's polynomial-content conjecture via Carlitz's congruence"
+[trureturing]
+repo = "the-omega-institute/trureturing"
+branch = "dev"
+[books]
+order = ["copeland-a131758"]
+hide = []

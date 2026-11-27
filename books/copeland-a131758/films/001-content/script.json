@@ -1,0 +1,46 @@
+{
+  "voice": "af_heart",
+  "speed": 0.94,
+  "say": {"gcd": "G C D", "Laguerre": "Luh-gair"},
+  "music": {"bpm": 84, "progression": "d-minor"},
+  "scenes": [
+    {
+      "id": "row", "name": "THE SHARED DIVISOR", "lead": 0.8, "tail": 0.8,
+      "lines": [
+        ["Take the four coefficients in row three of Copeland's table: four, minus fourteen, ten, and six.", "看 Copeland 数表第三行的四个系数：四、负十四、十、六。"],
+        ["Two divides every entry, and no bigger number does. We call this greatest common divisor the content of the row.", "四项都能被二整除；没有更大的公因数。这个最大公因数就是该行的内容。"],
+        ["But a shortcut based on the divisors of the row number gives the wrong answer at row eight.", "但用行号的因数个数推算内容，在第八行就会出错。"]
+      ]
+    },
+    {
+      "id": "bridge", "name": "CHANGE THE QUESTION", "lead": 0.6, "tail": 0.8,
+      "lines": [
+        ["How do we find a rule for every row? Instead of studying the coefficients directly, sample a Laguerre polynomial at the positive integers.", "怎样找到对每行都成立的规则？不妨先在正整数处对 Laguerre 多项式取样。"],
+        ["The row is made of integer combinations of these samples. And every sample is an integer combination of the row entries.", "每个行系数都是样本的整数组合，反过来每个样本也是行系数的整数组合。"],
+        ["So the two lists have exactly the same common divisors.", "所以两组数的公因数完全相同。"]
+      ]
+    },
+    {
+      "id": "prime", "name": "ODD PRIMES CANNOT SURVIVE", "lead": 0.6, "tail": 0.8,
+      "lines": [
+        ["To rule out an odd prime, we need just one sample it does not divide.", "要排除一个奇素数，只需找一个不能被它整除的样本。"],
+        ["Carlitz's congruence reduces the test to a polynomial of degree below the prime. It cannot vanish at every nonzero remainder: either there are too many roots, or a coefficient rules that out.", "Carlitz 的同余把检验化为次数小于该素数的多项式。非零余数不可能全是根：要么根太多，要么有一项系数不符。"]
+      ]
+    },
+    {
+      "id": "two", "name": "TWO, BUT NOT FOUR", "lead": 0.6, "tail": 0.8,
+      "lines": [
+        ["For even row numbers above zero, the sample at one is already odd.", "对于正的偶数行号，仅看一处取样就够了：在一处的样本是奇数。"],
+        ["For odd row numbers starting at three, every sample is even. But at three, the sample always leaves remainder two on division by four.", "对从三开始的奇数行号，所有样本均为偶数；但在三处的样本除以四总余二。"],
+        ["That single sample rules out four, while two still divides the whole row.", "这一个样本排除了四，而二仍然整除整行。"]
+      ]
+    },
+    {
+      "id": "answer", "name": "THE EXACT RULE", "lead": 0.6, "tail": 1.4,
+      "lines": [
+        ["The content is one for rows zero and one and for every even row. It is two for every odd row from three onward.", "第零行、第一行和所有偶数行的内容都是一；从第三行起，所有奇数行的内容都是二。"],
+        ["The formal counterexample rejects the old shortcut. The written proof of Ma and Zhang goes further and explains the whole pattern.", "形式化反例否定了旧算法；Haobo Ma 与 Wenlin Zhang 的书面证明进一步解释了整个规律。"]
+      ]
+    }
+  ]
+}

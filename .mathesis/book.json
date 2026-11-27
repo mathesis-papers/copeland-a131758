@@ -1,0 +1,90 @@
+{
+  "book": "copeland-a131758",
+  "pending_claims": [],
+  "results": {
+    "row-bridge": {
+      "claim": "collected:copeland-a131758:2:s1",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Proposition 1 — A131758 row properties and fixed divisor",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/463"
+      }
+    },
+    "exact-content": {
+      "claim": "collected:copeland-a131758:2:s2",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Theorem 2 — Exact contents of Copeland's A131758 rows",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/464"
+      }
+    },
+    "agreement": {
+      "claim": "collected:copeland-a131758:2:s3",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Corollary 3 — Agreement indices for Copeland's two divisor counts",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/465"
+      }
+    },
+    "row-parity": {
+      "claim": "collected:copeland-a131758:2:s4",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Corollary 4 — Coefficientwise parity of A131758 row polynomials",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/466"
+      }
+    },
+    "row-transforms": {
+      "claim": "collected:copeland-a131758:2:s5",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Corollary 5 — A131758 generating series and Eulerian transforms",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/467"
+      }
+    },
+    "sibling-rows": {
+      "claim": "collected:copeland-a131758:2:s6",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Corollary 6 — A131202 reconstruction and inverse binomial matrices",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/468"
+      }
+    },
+    "signed-bell": {
+      "claim": "collected:copeland-a131758:2:s7",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Corollary 7 — Signed ordered Bell normalization of A131758 transforms",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/469"
+      }
+    }
+  },
+  "stage": "complete",
+  "titles": {
+    "en": "Exact contents in Copeland's polynomial-content conjecture via Carlitz's congruence",
+    "zh": "Exact contents in Copeland's polynomial-content conjecture via Carlitz's congruence"
+  },
+  "version": 2,
+  "work": "copeland-a131758"
+}

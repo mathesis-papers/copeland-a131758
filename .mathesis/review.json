@@ -1,0 +1,46 @@
+{
+  "results": {
+    "row-bridge": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "The frozen theorem negates (integer row realizations at all n ≥ 0) AND (every such row at n ≥ 1 has content D(n)). Its proof obtains the row at n = 8 from the conjunction; it does not prove global integrality, degree, leading coefficient, row sum, the power-series identity, or equality with the gcd of all positive integer Laguerre samples."
+    },
+    "exact-content": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "The frozen theorem negates the original joint claim. Inside that argument it derives conditional content 1 at n = 8 from two coprime coefficients; this is compatible with, but not a declaration of, the universal 1/2 classification, its n = 0, 1 boundaries, or the odd-index mod-four witness."
+    },
+    "agreement": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "The frozen theorem uses D(8) = 2 in a counterexample to the unshifted joint assertion. It proves neither exact iff list for D(n) or D(n+1), nor simultaneous failure for all n = 6s + 8."
+    },
+    "row-parity": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S0/Certificates/CopelandA131758PolynomialContentRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Two concrete coprime coefficients at n = 8 do not prove P_n(t) = (1+t)^(n−1) coefficientwise over F₂ for even n ≥ 2, or P_n = 0 over F₂ for odd n ≥ 3. A constant-column parity statement would also be insufficient."
+    },
+    "row-transforms": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "No matching declaration in the inspected evidence: the A131758 certificate only refutes the joint content claim. The related-by-name Laguerre–Li bridge uses a symmetric finite real measure and supplied Li coefficients, not negative-index polylogarithms, the Q(t) generating functions, recurrence, inverse Eulerian transforms or alternating row sums."
+    },
+    "sibling-rows": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "The source-linked certificate involves no A131202 rows. No declaration in the inspected set matched the difference and reconstruction (including k = 0 and the corrected power k), t = 1 and t = 2 specializations, degree/leading term, or the inverse A133289 matrix."
+    },
+    "signed-bell": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "The source-linked certificate does not involve ordered Bell numbers. No declaration in the inspected set matched the reciprocal Laguerre transforms, the signed ordered Bell factor −1/2 for rationally continued Li at t = 2, or the R_n normalization, including n = 0."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "duration": "1:41",
+  "id": "001-content",
+  "lean": [],
+  "narration": {
+    "engine": "Kokoro-82M v1.0 (onnx)",
+    "language": "en",
+    "voice": "af_heart"
+  },
+  "outputs": {
+    "cover": "copeland-a131758_001_cover.jpg",
+    "narrated_720p": "copeland-a131758_001_720p_narrated.mp4"
+  },
+  "publication_basis": "pinned",
+  "released": "2026-11-23",
+  "resolution": "1280x720@30",
+  "style": "trureturing cyberpunk · deterministic canvas",
+  "subject": "https://doi.org/10.5281/zenodo.24445683",
+  "subtitles": [
+    "zh",
+    "en"
+  ],
+  "summary": "Use a row of four integers to see what content means. Then trade coefficients for samples to explain why only one factor of two can survive.",
+  "summary_zh": "先用四个系数认识多项式的内容，再把系数换成取样值，看公因数为何至多保留一个因数二。",
+  "title": "Why only one or two?",
+  "title_zh": "系数的公因数为何只有一或二？"
+}
